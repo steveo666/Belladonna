@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.IBinder;
 import android.util.Log;
+import android.widget.Toast;
 
 public class UpdaterService extends Service {
 
@@ -56,10 +57,14 @@ public class UpdaterService extends Service {
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		// TODO Auto-generated method stub
 		super.onStartCommand(intent, flags, startId);
-		Log.d(TAG, "OnStarted");
-		this.runFlag = true;
-		this.updater.start();
-		this.yamba.setServiceRunning(true);
+		if (!this.runFlag) {
+			Log.d(TAG, "OnStarted");
+			this.runFlag = true;
+			this.updater.start();
+			this.yamba.setServiceRunning(true);
+		} else {
+			Toast.makeText(UpdaterService.this, "Service already running", Toast.LENGTH_SHORT).show();
+		}
 		return START_STICKY;
 	}
 
