@@ -18,7 +18,7 @@
         </service>
 
         <activity
-            android:name=".FriendListActivity"
+            android:name=".StatusActivity"
             android:label="@string/titleTestApp" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,8 +31,7 @@
             android:label="@string/titlePrefs"
             android:theme="@android:style/Theme.Dialog" >
         </activity>
-        <activity android:name=".StatusActivity" >
-        </activity>
+     
     </application>
 
 </manifest>
