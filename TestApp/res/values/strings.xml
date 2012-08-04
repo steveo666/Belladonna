@@ -1,0 +1,19 @@
+
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="menu_settings">Settings</string>
+    <string name="titleTestApp">TestApp</string>
+    <string name="hintText">Please enter your 140-character status</string>
+    <string name="buttonUpdate">Update</string>
+    <string name="titleUsername">Username</string>
+    <string name="titlePassword">Password</string>
+    <string name="titleAPIRoot">API Root URL</string>
+    <string name="summaryUsername">Account Username</string>
+    <string name="summaryPassword">Account Password</string>
+    <string name="summaryAPIRoot">Location of API Root</string>
+    <string name="titlePrefs">Preferences</string>
+    <string name="counter">000</string>
+    <string name="titleServiceStart">Start Updater</string>
+    <string name="titleServiceStop">Stop Updater</string>
+
+</resources>
