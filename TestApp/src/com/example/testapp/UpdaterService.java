@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
+
 public class UpdaterService extends Service {
   public static final String NEW_STATUS_INTENT = "com.marakana.yamba.NEW_STATUS";
   public static final String NEW_STATUS_EXTRA_COUNT = "NEW_STATUS_EXTRA_COUNT";
@@ -61,6 +62,7 @@ public class UpdaterService extends Service {
       super("UpdaterService-Updater");
     }
 
+
     @Override
     public void run() {
       UpdaterService updaterService = UpdaterService.this;
@@ -80,5 +82,5 @@ public class UpdaterService extends Service {
         }
       }
     }
-  } // Updater
+  } 
 }
